@@ -4,8 +4,34 @@
  * 
  */
 
-html {
-	background: #ffe5b4;
+ @font-face {
+    font-family: "Merriweather Sans";
+    src: url('assets/fonts/Merriweather_Sans/Static/MerriweatherSans-Bold.ttf');
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    padding: 2rem 5rem;
+	background: #ffe5b4;
+    font-size: 16px;
+}
+
+body {
+    padding: 3rem;
+    border-radius: 0.5rem;  
+    background: #FFF7E7;
+}
+
+h1 {
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+img {
+    width: 1.75rem;
+}
 

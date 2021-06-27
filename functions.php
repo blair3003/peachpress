@@ -1,5 +1,10 @@
 <?php
 
+// Load font
+function peachpress_enqueue_fonts() {
+	
+}
+
 // Load css
 function peachpress_enqueue_styles() {
 	wp_register_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap/bootstrap.min.css', false, '5.0.2', 'all');
