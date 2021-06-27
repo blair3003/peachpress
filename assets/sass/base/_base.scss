@@ -1,0 +1,66 @@
+/**
+ * Base
+ */
+
+html {
+	background-color: $peach;
+	font-size: 16px;
+	font-family: "Sarala", sans-serif;
+	color: $black;
+
+	@media only screen and (min-width: 768px) {
+		padding: 2rem 5rem;	
+	}
+}
+
+body {
+	background-color: $latte;
+
+	@media only screen and (min-width: 768px) {
+		padding: 3rem;
+		border-radius: 0.5rem;	
+	}
+}
+
+h1 {
+	color: $blood;
+	font-family: "Merriweather Sans", sans-serif;
+	font-weight: bold;
+	font-size: 4rem;
+}
+
+h2 {
+	color: $blood;
+	font-family: "Merriweather Sans", sans-serif;
+	font-size: 3rem;
+}
+
+h3 {
+	color: $tart;
+	font-family: "Amiri", serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 2.5rem;
+}
+
+h4 {
+	color: $tart;
+	font-family: "Amiri", serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+h5 {
+	color: $black;
+	font-family: "Sarala", sans-serif;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+h6 {
+	color: $black;
+	font-family: "Sarala", sans-serif;
+	font-weight: bold;
+	font-size: 1.25rem;
+}

@@ -12,30 +12,28 @@
 
 		<header id="masthead" class="site-header" role="banner">
 
-			<div class="site-branding">
-				<div class="site-logo">
-					<img src="<?php echo get_template_directory_uri() . '/assets/images/peach-icon.png' ?>">
-				</div>
-				<h1 class="site-title">PeachPress</h1>
-			</div>
+			<a class="site-branding" href="/">
+				<img class="site-branding__logo" src="<?php echo get_template_directory_uri() . '/assets/images/peach-icon.png' ?>">
+				<span class="site-branding__title">PeachPress</span>
+			</a>
 
-			<nav id="site-navigation" class="primary-navigation" role="navigation">
-				<ul>
-					<li>
-						<a href="#">Hello</a>
+			<nav class="site-navigation" role="navigation">
+				<ul class="site-navigation__list">
+					<li class="site-navigation__item">
+						<a class="site-navigation__link" href="#">Hello</a>
 					</li>
-					<li>
-						<a href="#">How are you?</a>
+					<li class="site-navigation__item">
+						<a class="site-navigation__link" href="#">How are you?</a>
 					</li>
-					<li>
-						<a href="#">Goodbye</a>
+					<li class="site-navigation__item">
+						<a class="site-navigation__link" href="#">Goodbye</a>
 					</li>
 				</ul>				
 			</nav>
 
 			<div class="site-buttons">
-				<a href="#">Contact</a>
-				<a href="#">Donate</a>		
+				<a class="btn btn--peach" href="#">Contact</a>
+				<a class="btn btn--salmon" href="#">Donate</a>		
 			</div>
 
 		</header>
