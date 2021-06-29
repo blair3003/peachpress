@@ -14,21 +14,11 @@
 
 			<a class="site-branding" href="/">
 				<img class="site-branding__logo" src="<?php echo get_template_directory_uri() . '/assets/images/peach-icon.png' ?>">
-				<span class="site-branding__title">PeachPress</span>
-			</a>
+				<span class="site-branding__title"><?php echo get_bloginfo('name'); ?></span>
+			</a>			
 
 			<nav class="site-navigation" role="navigation">
-				<ul class="site-navigation__list">
-					<li class="site-navigation__item">
-						<a class="site-navigation__link" href="#">Hello</a>
-					</li>
-					<li class="site-navigation__item">
-						<a class="site-navigation__link" href="#">How are you?</a>
-					</li>
-					<li class="site-navigation__item">
-						<a class="site-navigation__link" href="#">Goodbye</a>
-					</li>
-				</ul>				
+				<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>		
 			</nav>
 
 			<div class="site-buttons">
