@@ -13,8 +13,8 @@
 		<header id="masthead" class="site-header" role="banner">
 
 			<a class="site-branding" href="/">
-				<img class="site-branding__logo" src="<?php echo get_template_directory_uri() . '/assets/images/peach-icon.png' ?>">
-				<span class="site-branding__title"><?php echo get_bloginfo('name'); ?></span>
+				<img class="site-logo" src="<?php echo get_template_directory_uri() . '/assets/images/peach-icon.png' ?>">
+				<span class="site-title"><?php echo get_bloginfo('name'); ?></span>
 			</a>			
 
 			<nav class="site-navigation" role="navigation">
