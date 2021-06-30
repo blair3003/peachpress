@@ -29,6 +29,7 @@ body {
 }
 
 h1 {
+	margin-bottom: 1.5rem;
 	color: $blood;
 	font-family: "Merriweather Sans", sans-serif;
 	font-weight: bold;
@@ -36,6 +37,7 @@ h1 {
 }
 
 h2 {
+	margin-bottom: 1rem;
 	color: $blood;
 	font-family: "Merriweather Sans", sans-serif;
 	font-size: 3rem;
@@ -58,6 +60,7 @@ h4 {
 }
 
 h5 {
+	margin-bottom: 0.5rem;
 	color: $black;
 	font-family: "Sarala", sans-serif;
 	font-weight: bold;
@@ -65,8 +68,14 @@ h5 {
 }
 
 h6 {
+	margin-bottom: 0.25rem;
 	color: $black;
 	font-family: "Sarala", sans-serif;
 	font-weight: bold;
 	font-size: 1.25rem;
+}
+
+p {
+	margin-bottom: 1rem;
+
 }

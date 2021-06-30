@@ -2,6 +2,7 @@
 
 // Theme options
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 // Load css
 function peachpress_enqueue_styles() {
@@ -29,5 +30,11 @@ function peachpress_register_nav_menus() {
 	);
 }
 add_action( 'init', 'peachpress_register_nav_menus' );
+
+// Add image sizes
+function peachpress_add_image_sizes() {
+	add_image_size( 'post-featured', 640, 360, true );
+}
+add_action( 'init', 'peachpress_add_image_sizes' );
 
 ?>

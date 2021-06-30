@@ -1,0 +1,60 @@
+.post {
+	padding: 0 1.5rem;
+
+	@media only screen and (min-width: 768px) {
+		max-width: 40rem;
+		padding: 0;
+	}
+
+	.entry-header {
+		margin-bottom: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media only screen and (min-width: 768px) {
+			align-items: flex-start;
+
+		}
+
+		.entry-title {
+			text-align: center;
+
+			@media only screen and (min-width: 768px) {
+				text-align: left;
+			}
+
+		}
+
+		.entry-meta {
+			margin-bottom: 0.5rem;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			@media only screen and (min-width: 768px) {
+				justify-content: flex-start;
+			}
+
+			.entry-author {
+
+			}
+
+			.entry-date {
+
+				@media only screen and (min-width: 768px) {
+					margin-left: 1.5rem;
+				}
+
+			}
+		}
+
+		.entry-thumbnail {
+			width: 100%;
+		}
+	}
+
+	.entry-content {}
+
+	.entry-footer {}
+}
