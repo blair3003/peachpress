@@ -45,8 +45,6 @@
 				padding: 0 1rem;
 
 				a {
-					color: $blood;
-					text-decoration: none;
 					white-space: nowrap;
 				}
 			}
@@ -112,28 +110,5 @@
 			margin: 0;
 		}
 
-		.btn {		
-			margin: 0 0.5rem;	
-			padding: 0.5rem 1rem;
-			color: $blood;
-			text-decoration: none;
-			border-radius: 10rem;
-			box-shadow: 0px 0.2rem 1rem rgba(0, 0, 0, 0.1);
-		}
-
-		.btn:active {
-  			transform: translateY(1px);
-			box-shadow: none;
-		}
-
-		.btn--salmon {
-			color: $black;
-			background-color: $salmon;
-		}
-
-		.btn--peach {
-			color: $blood;
-			background-color: $peach;
-		}
 	}
 }

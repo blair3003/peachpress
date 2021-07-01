@@ -1,43 +1,58 @@
-/**
- * Typography
- */
-
-@font-face {
-   font-family: "Amiri";
-   src: url('/wp-content/themes/peachpress/assets/fonts/Amiri/Amiri-Regular.ttf');
+h1 {
+	margin-bottom: 1.5rem;
+	color: $blood;
+	font-family: "Merriweather Sans", sans-serif;
+	font-weight: bold;
+	font-size: 4rem;
 }
 
-@font-face {
-   font-family: "Amiri Bold";
-   src: url('/wp-content/themes/peachpress/assets/fonts/Amiri/Amiri-Bold.ttf');
+h2 {
+	margin-bottom: 1rem;
+	color: $blood;
+	font-family: "Merriweather Sans", sans-serif;
+	font-size: 3rem;
 }
 
-@font-face {
-   font-family: "Amiri Bold Italic";
-   src: url('/wp-content/themes/peachpress/assets/fonts/Amiri/Amiri-BoldItalic.ttf');
+h3 {
+	color: $tart;
+	font-family: "Amiri", serif;
+	font-weight: normal;
+	font-size: 2.5rem;
 }
 
-@font-face {
-   font-family: "Amiri Italic";
-   src: url('/wp-content/themes/peachpress/assets/fonts/Amiri/Amiri-Italic.ttf');
+h4 {
+	color: $tart;
+	font-family: "Amiri", serif;
+	font-weight: normal;
+	font-size: 2rem;
 }
 
-@font-face {
-   font-family: "Merriweather Sans";
-   src: url('/wp-content/themes/peachpress/assets/fonts/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf');
+h5 {
+	margin-bottom: 0.5rem;
+	color: $black;
+	font-family: "Sarala", sans-serif;
+	font-weight: bold;
+	font-size: 1.5rem;
 }
 
-@font-face {
-   font-family: "Merriweather Sans Italic";
-   src: url('/wp-content/themes/peachpress/assets/fonts/Merriweather_Sans/MerriweatherSans-Italic-VariableFont_wght.ttf');
+h6 {
+	margin-bottom: 0.25rem;
+	color: $black;
+	font-family: "Sarala", sans-serif;
+	font-weight: bold;
+	font-size: 1.25rem;
 }
 
-@font-face {
-   font-family: "Sarala";
-   src: url('/wp-content/themes/peachpress/assets/fonts/Sarala/Sarala-Regular.ttf');
+p {
+	margin-bottom: 1rem;
+
 }
 
-@font-face {
-   font-family: "Sarala Bold";
-   src: url('/wp-content/themes/peachpress/assets/fonts/Sarala/Sarala-Bold.ttf');
+a {
+	color: $blood;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $tart;
 }

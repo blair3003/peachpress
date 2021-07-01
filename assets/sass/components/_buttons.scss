@@ -1,0 +1,40 @@
+.btn {		
+	margin: 0 0.5rem;	
+	padding: 0.5rem 1rem;
+	color: $blood;
+	text-decoration: none;
+	border-radius: 10rem;
+	box-shadow: 0px 0.2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+	transform: translateY(1px);
+	box-shadow: none;
+}
+
+.btn:hover {
+	color: $blood;
+}
+
+.btn--latte {
+	color: $black;
+	background-color: $latte;
+}
+
+.btn--latte:hover {
+	color: $black;
+}
+
+.btn--salmon {
+	color: $black;
+	background-color: $salmon;
+}
+
+.btn--salmon:hover {
+	color: $black;
+}
+
+.btn--peach {
+	color: $blood;
+	background-color: $peach;
+}
