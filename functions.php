@@ -3,6 +3,7 @@
 // Theme options
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
+add_theme_support('widgets');
 
 // Load css
 function peachpress_enqueue_styles() {
@@ -30,6 +31,22 @@ function peachpress_register_nav_menus() {
 	);
 }
 add_action( 'init', 'peachpress_register_nav_menus' );
+
+// Register sidebars
+function peachpress_register_sidebars() {
+	register_sidebar(
+		array(
+	        'name' => 'Sidebar',
+	        'id' => 'sidebar-default',
+	        'description' => 'The default sidebar',
+	        'before_widget' => '<div class="widget">',
+	        'after_widget' => '</div>',
+	        'before_title' => '<h4 class="widget-title">',
+	        'after_title' => '</h4>',
+	    )
+	);
+}
+add_action( 'widgets_init', 'peachpress_register_sidebars');
 
 // Add image sizes
 function peachpress_add_image_sizes() {
