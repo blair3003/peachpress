@@ -1,11 +1,20 @@
-	
-	<?php if ( is_active_sidebar('sidebar-default') ) : ?>
-		<?php get_template_part( 'template-parts/single', 'sidebar' ); ?>
-	<?php endif; ?>
-	</main>
-	<footer></footer>
-</div>
+<?php
+/**
+ * The footer.
+ *
+ * @package PeachPress
+ */
 
-<?php wp_footer(); ?>
+if ( ! defined( 'ABSPATH' ) ) : exit; endif;
+?>	
+	
+		<footer class="site-footer">
+			
+		</footer>
+	</div>
+
+	<?php wp_footer(); ?>
+
 </body>
+
 </html>

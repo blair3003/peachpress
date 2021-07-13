@@ -13,25 +13,21 @@ html {
 	font-size: 16px;
 	font-family: "Sarala", sans-serif;
 	color: $black;
-
-	@media only screen and (min-width: 768px) {
-		padding: 2rem 5rem;	
-	}
 }
 
-body {
+.site {
+	display: grid;
 	background-color: $latte;
+	padding: 2rem;
 
 	@media only screen and (min-width: 768px) {
-		padding: 3rem;
-		border-radius: 0.5rem;	
+		max-width: 1200px;
+		margin: 2rem auto;
+		border-radius: 0.5rem;
 	}
 }
 
-main {
+.site-main {
 
-	@media only screen and (min-width: 768px) {
-		display: flex;	
-	}
 }
 
