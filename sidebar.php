@@ -9,5 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 ?>
 
 <aside class="site-sidebar">
+    The sidebar
   
 </aside>

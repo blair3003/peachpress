@@ -9,6 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 ?>	
 	
 		<footer class="site-footer">
+			The footer
 			
 		</footer>
 	</div>
