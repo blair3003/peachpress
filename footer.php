@@ -9,8 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 ?>	
 	
 		<footer class="site-footer">
-			The footer
-			
+			<div class="copyright-bar">
+				<a href="<?php echo esc_url( home_url('/') ); ?>">&copy; <?php echo date('Y'); ?> PeachPress</a>
+			</div>			
 		</footer>
 	</div>
 

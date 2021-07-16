@@ -9,6 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 ?>
 
 <aside class="site-sidebar">
-    The sidebar
+    <?php dynamic_sidebar( 'sidebar-default' ); ?>
   
 </aside>
