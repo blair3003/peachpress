@@ -1,0 +1,48 @@
+.content-excerpt {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1);
+
+    @media only screen and (min-width: 768px) {
+        border-radius: 0.5rem;
+    }
+
+    .entry-header {
+
+        .entry-title {
+            margin: 0;
+
+        }
+
+        .entry-meta {
+            margin-top: 0.5rem;
+            padding: 0 0.25rem;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 0.75rem;
+
+            .entry-date {}
+
+            .entry-author {
+                margin-left: 0.25rem;
+            }
+
+            .entry-comments {
+                margin-left: 1rem;
+            }
+
+            .entry-cats {
+                flex-basis: 100%;
+            }
+
+        }
+
+    }
+
+    .entry-excerpt {
+        margin-top: 1rem;
+        padding: 0 0.25rem;
+
+    }
+} 
