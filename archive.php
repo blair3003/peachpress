@@ -15,13 +15,13 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
     <?php
     if ( have_posts() ) :
     ?>
-
+    <header class="page-header">
 		<h1 class="page-title">
 			<?php if ( single_cat_title('', false) ) : single_cat_title(); ?>
 			<?php else : the_archive_title(); ?>
 			<?php endif; ?>
-		</h1>
-
+		</h1>    
+    </header>
 
 	<?php
         while ( have_posts() ) :

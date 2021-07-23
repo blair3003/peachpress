@@ -8,11 +8,11 @@
 if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 ?>
 
-<section class="no-content">
-    <header class="page-header">
-        <h1 class="page-title">Nothing to see here</h1>        
+<article <?php post_class('content'); ?>>
+    <header class="content-header">
+        <h1 class="content-title">Nothing to see here</h1>        
     </header>
-    <div class="page-content">
+    <section class="content-body">
 
         <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
@@ -30,5 +30,5 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 
         <?php endif; ?>
         
-    </div>
-</section>
+    </section>
+</article>

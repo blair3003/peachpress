@@ -1,3 +1,6 @@
+.content { }
+
+
 .content-excerpt {
     margin-bottom: 1rem;
     padding: 1rem;
@@ -8,41 +11,37 @@
         border-radius: 0.5rem;
     }
 
-    .entry-header {
+    .content-header {
 
-        .entry-title {
+        .content-title {
             margin: 0;
-
         }
 
-        .entry-meta {
+        .content-meta {
             margin-top: 0.5rem;
             padding: 0 0.25rem;
             display: flex;
             flex-wrap: wrap;
             font-size: 0.75rem;
 
-            .entry-date {}
+            .content-date {}
 
-            .entry-author {
+            .content-author {
                 margin-left: 0.25rem;
             }
 
-            .entry-comments {
+            .content-comments {
                 margin-left: 1rem;
             }
 
-            .entry-cats {
+            .content-cats {
                 flex-basis: 100%;
             }
-
         }
-
     }
 
-    .entry-excerpt {
+    .content-body-excerpt {
         margin-top: 1rem;
         padding: 0 0.25rem;
-
     }
 } 

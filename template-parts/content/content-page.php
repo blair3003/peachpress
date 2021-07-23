@@ -1,6 +1,6 @@
 <?php
 /**
- * The content.
+ * The content page.
  *
  * @package PeachPress
  */
@@ -8,11 +8,11 @@
 if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
     <header class="content-header">
-        <h2 class="content-title">
-            <a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a>
-        </h2>
+        <h1 class="content-title">
+            <?php the_title(); ?>
+        </h1>
         <div class="content-meta"></div>
     </header>
 
