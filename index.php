@@ -18,6 +18,11 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
             the_post();
             get_template_part( 'template-parts/content/content', 'excerpt' );
         endwhile;
+        the_posts_pagination( array(
+            'mid_size'  => 2,
+            'prev_text' => '← Previous',
+            'next_text' => 'Next →',
+        ) );
     else :
         get_template_part( 'template-parts/content/content', 'none' );
     endif;
