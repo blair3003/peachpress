@@ -50,8 +50,8 @@ add_action( 'widgets_init', 'peachpress_register_sidebars');
 
 // Add image sizes
 function peachpress_add_image_sizes() {
-	add_image_size( 'post-featured', 640, 360, true );
-	add_image_size( 'post-archive', 320, 320, true );
+	add_image_size( 'content-featured', 720, 405, true );
+	//add_image_size( 'post-archive', 320, 320, true );
 }
 add_action( 'init', 'peachpress_add_image_sizes' );
 

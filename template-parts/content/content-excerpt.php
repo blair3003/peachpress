@@ -18,6 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
         	<span class="content-author">
                 by <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" rel="author"><?php echo get_the_author(); ?></a>
             </span>
+        	<span class="content-cats"><?php echo get_the_category_list(', '); ?></span>
             <span class="content-comments">
                 <a href="<?php echo esc_url(get_permalink() . '#comments'); ?>">
                     <?php
@@ -29,7 +30,6 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
                     ?>
                 </a>
             </span>
-        	<span class="content-cats"><?php echo get_the_category_list(', '); ?></span>
         </div>
     </header>
 

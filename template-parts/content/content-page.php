@@ -14,20 +14,28 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
             <?php the_title(); ?>
         </h1>
         <div class="content-meta"></div>
+        <?php if ( has_post_thumbnail() ) : ?>
+            <img class="content-thumbnail" src="<?php the_post_thumbnail_url('content-featured'); ?>" alt="<?php the_title(); ?>"> 
+        <?php endif; ?>
     </header>
 
-    <section class="content-body">
-        <?php
-        the_content();
+    <section class="content-body" id="content">
+        <?php the_content(); ?>
 
+        <hr class="content-separator">
+
+        <?php
         wp_link_pages(
             array(
-                'before'   => '<nav class="content-links">Pages:',
-                'after'    => '</nav>'
+                'before' => '<nav class="content-links">',
+                'after' => '</nav>',
+                'next_or_number' => 'next',
+                'nextpagelink' => 'Next →',
+                'previouspagelink' => '← Previous'
             )
         );
-
         ?>
+
     </section>
 
     <footer class="content-footer">
