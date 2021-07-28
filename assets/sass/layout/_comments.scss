@@ -1,0 +1,64 @@
+.comments {
+
+	.comments-form {
+
+		.comment-respond {
+
+			.comment-form {
+
+				& > p {
+
+					label {
+						position: absolute; //remove once accessibility is sorted
+						left: -10000px;
+					}
+
+					textarea {
+						width: 100%;
+						max-width: 100%;
+    					padding: 1rem;
+						font-family: "Sarala", sans-serif;
+						font-weight: 400;
+    					text-transform: none;
+    					font-size: 1rem;
+    					line-height: 1.5;
+						color: $black;
+						border: none;
+					}
+
+					input {
+						max-width: 100%;
+    					padding: 1rem;
+						font-family: "Sarala", sans-serif;
+						font-weight: 400;
+    					text-transform: none;
+    					font-size: 1rem;
+    					line-height: 1.5;
+						color: $black;
+						border: none;
+					}
+
+					input[type="checkbox"] {
+						margin: 0 0.25rem;
+					}
+
+					input[type="submit"] {
+						background-color: $salmon;
+						cursor: pointer;
+					}
+				}
+
+				.comment-form-cookies-consent {
+
+					label {
+						position: static; //this is temporary to as to not be affected by the above rule
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+}

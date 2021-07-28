@@ -19,13 +19,9 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
             get_template_part( 'template-parts/content/content', 'single' );
         endwhile;
         	
-        if ( comments_open() || get_comments_number() != '0' ) : ?>
-
-			<section class="comments">
-				<?php comments_template(); ?>
-			</section>
-			
-	<?php endif;
+        if ( comments_open() || get_comments_number() != '0' ) :
+            comments_template();
+        endif;
 
     else :
         get_template_part( 'template-parts/content/content', 'none' );
