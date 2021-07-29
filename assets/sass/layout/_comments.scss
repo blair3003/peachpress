@@ -1,59 +1,81 @@
 .comments {
 
+	.comments-title {
+		margin: 1rem 0;
+
+	}
+
+	.comments-list {
+		list-style-type: none;
+
+		.comment {
+		    margin-bottom: 1rem;
+		    padding: 1rem;
+    		background-color: rgba(255,255,255,0.3);
+		    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1);
+
+		    @media only screen and (min-width: 768px) {
+		        border-radius: 0.5rem;
+		    }
+
+		    .children {
+				list-style-type: none;
+
+		    }
+		}
+
+	}
+
 	.comments-form {
 
-		.comment-respond {
+		.comment-form {
 
-			.comment-form {
+			& > p {
 
-				& > p {
-
-					label {
-						position: absolute; //remove once accessibility is sorted
-						left: -10000px;
-					}
-
-					textarea {
-						width: 100%;
-						max-width: 100%;
-    					padding: 1rem;
-						font-family: "Sarala", sans-serif;
-						font-weight: 400;
-    					text-transform: none;
-    					font-size: 1rem;
-    					line-height: 1.5;
-						color: $black;
-						border: none;
-					}
-
-					input {
-						max-width: 100%;
-    					padding: 1rem;
-						font-family: "Sarala", sans-serif;
-						font-weight: 400;
-    					text-transform: none;
-    					font-size: 1rem;
-    					line-height: 1.5;
-						color: $black;
-						border: none;
-					}
-
-					input[type="checkbox"] {
-						margin: 0 0.25rem;
-					}
-
-					input[type="submit"] {
-						background-color: $salmon;
-						cursor: pointer;
-					}
+				label {
+					position: absolute; //remove once accessibility is sorted
+					left: -10000px;
 				}
 
-				.comment-form-cookies-consent {
+				textarea {
+					width: 100%;
+					max-width: 100%;
+					padding: 1rem;
+					font-family: "Sarala", sans-serif;
+					font-weight: 400;
+					text-transform: none;
+					font-size: 1rem;
+					line-height: 1.5;
+					color: $black;
+					border: none;
+				}
 
-					label {
-						position: static; //this is temporary to as to not be affected by the above rule
-					}
+				input {
+					max-width: 100%;
+					padding: 1rem;
+					font-family: "Sarala", sans-serif;
+					font-weight: 400;
+					text-transform: none;
+					font-size: 1rem;
+					line-height: 1.5;
+					color: $black;
+					border: none;
+				}
 
+				input[type="checkbox"] {
+					margin: 0 0.25rem;
+				}
+
+				input[type="submit"] {
+					background-color: $salmon;
+					cursor: pointer;
+				}
+			}
+
+			.comment-form-cookies-consent {
+
+				label {
+					position: static; //this is temporary to as to not be affected by the above rule
 				}
 
 			}
