@@ -20,7 +20,58 @@
 
 		    .children {
 				list-style-type: none;
+		    }
 
+		    .comment-single {
+		    	display: flex;
+		    	margin-bottom: 1rem;
+
+		    	.comment-thumbnail {
+		    		margin-right: 1rem;
+
+		    		.avatar {
+		    			width: 3rem;
+		    			height: 3rem;
+		    			border-radius: 1.5rem;
+		    		}
+
+		    	}
+
+		    	.comment-body {
+
+		    		.comment-meta {
+
+		    			.comment-name {
+		    				margin-right: 0.5rem;
+		    				font-style: normal;
+		    			}
+
+		    			.comment-time {
+            				font-size: 0.75rem;
+
+		    			}
+
+		    		}
+
+		    		.comment-content {
+
+		    		}
+
+		    		.comment-footer {
+
+		    			.edit-link {
+		    				margin-right: 1rem;
+            				font-size: 0.75rem;
+		    				text-transform: uppercase;
+		    			}
+
+		    			.reply {
+            				font-size: 0.75rem;
+		    				text-transform: uppercase;
+		    			}
+		    			
+		    		}
+		    	}
 		    }
 		}
 
