@@ -20,11 +20,9 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
     </header>
 
     <section class="content-body" id="content">
-        <?php the_content(); ?>
-
-        <hr class="content-separator">
-
         <?php
+        the_content();
+        
         wp_link_pages(
             array(
                 'before' => '<nav class="content-links">',

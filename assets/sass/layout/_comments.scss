@@ -9,14 +9,8 @@
 		list-style-type: none;
 
 		.comment {
-		    margin-bottom: 1rem;
-		    padding: 1rem;
-    		background-color: rgba(255,255,255,0.3);
-		    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1);
-
-		    @media only screen and (min-width: 768px) {
-		        border-radius: 0.5rem;
-		    }
+		    padding: 0 1rem;
+		    border-left: 1px solid rgba(0, 0, 0, 0.1);
 
 		    .children {
 				list-style-type: none;
