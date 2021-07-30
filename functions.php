@@ -1,5 +1,8 @@
 <?php
 
+// Includes
+require get_template_directory() . '/inc/template-tags.php';
+
 // Theme options
 add_theme_support('menus');
 add_theme_support('post-thumbnails');

@@ -13,7 +13,14 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 
 	<?php if ( have_comments() ) : ?>
 	    <ol class="comments-list">
-	    	<?php wp_list_comments(); ?>
+	    	<?php
+	    	wp_list_comments(
+	    		array(
+	    			'callback' => 'peachpress_comment',
+	    			'reverse_top_level' => true
+	    		)
+	    	);
+	    	?>
 		</ol>
 	<?php endif; ?>
 
