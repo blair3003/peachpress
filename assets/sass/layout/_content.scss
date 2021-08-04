@@ -36,7 +36,85 @@
     }
 
     .content-body {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid $trans;
+
+        .wp-block-image {
+
+            img {
+                height: auto;
+            }
+
+            figcaption {
+                font-size: 0.75rem;
+            }
+
+        }
+
+        .wp-block-table {
+            border: none;
+
+            table {
+
+                thead {
+
+                    tr {
+                        background-color: $salmon;
+
+                        th {
+                            padding: 0.5rem;
+                            font-weight: normal;
+                        }                        
+                    }
+                }
+
+                tbody {
+
+                    tr {
+                        background-color: $white;
+
+                        td {
+                            padding: 0.5rem;
+                        }
+                    }
+                }
+
+                tfoot {
+                    border-top: 1px solid $trans; 
+
+                    tr {
+                        background-color: $white;
+
+                        td {
+                            padding: 0.5rem;
+                        }
+                    }
+                }
+
+
+            }
+
+            figcaption {
+                padding: 0.5rem;
+                font-size: 0.75rem;
+            }
+
+        }
+
+        .is-style-stripes {
+
+            table {
+
+                tbody {
+
+                    tr {
+                        &:nth-child(odd) {
+                            background-color: $latte-sat;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }
 

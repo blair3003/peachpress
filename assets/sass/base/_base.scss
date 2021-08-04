@@ -42,10 +42,10 @@ html {
 .site-main {
 	grid-area: main;
 	padding: 2rem;
+	min-width: 0;
 	max-width: 50rem;
 }
 
 .toggle {
 	display: none;
 }
-
