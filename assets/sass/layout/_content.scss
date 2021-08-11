@@ -9,23 +9,50 @@
 
         .content-meta {
             margin: 0.5rem 0;
-            padding: 0 0.25rem;
+            padding-left: 0.25rem;
             display: flex;
-            flex-wrap: wrap;
-            font-size: 0.75rem;
+            justify-content: space-between;
 
-            .content-date {}
+            .content-info {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 0.75rem;
 
-            .content-author {
-                margin-left: 0.25rem;
-            }
+                .content-date {}
 
-            .content-cats {
-                flex-basis: 100%;
+                .content-author {
+                    margin-left: 0.25rem;
+                }
+
+                .content-cats {
+                    flex-basis: 100%;
+                }
+
+                .content-tags {
+                    flex-basis: 100%;
+                }
+
             }
 
             .content-comments {
-                flex-basis: 100%;
+
+                .comments-link {  
+                    display: flex;
+                    align-items: center;              
+
+                    .comments-number {
+                        margin-right: 0.5rem;
+                        font-family: "Merriweather Sans", sans-serif;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }                
+
+                    .comments-icon {
+                        width: 2rem;
+                    }
+
+                }
+
             }
         }
 

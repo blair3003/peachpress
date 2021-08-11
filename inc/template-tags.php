@@ -22,7 +22,9 @@ if ( ! function_exists('peachpress_comment') ) {
 
         <li id="comment-<?php comment_ID(); ?>" <?php comment_class( $args['has_children'] ? 'parent' : '' ); ?>>
             <article class="comment-single">
-                <div class="comment-thumbnail"><?php echo get_avatar($comment) ?></div>
+                <div class="comment-thumbnail">
+                    <img class="avatar" src="<?php echo get_template_directory_uri() . '/assets/images/peach-icon.png' ?>">                        
+                </div>
                 <div class="comment-body">
                     <div class="comment-meta">
                         <cite itemprop="name" class="comment-name"><?php echo get_comment_author_link(); ?></cite>

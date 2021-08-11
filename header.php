@@ -22,6 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 
 	<div id="page" class="site">
 
+		<a class="skip-link" href="#content">Skip to content</a>
+
 		<header class="site-header">
 
 			<a class="site-branding" href="<?php echo esc_url( home_url('/') ); ?>">
