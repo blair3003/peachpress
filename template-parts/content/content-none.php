@@ -9,9 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 ?>
 
 <article <?php post_class('content'); ?>>
-    <header class="content-header">
-        <h1 class="content-title">Nothing to see here</h1>        
-    </header>
+    
+    <?php get_template_part( 'template-parts/header/header', 'none' ); ?>
+
     <section class="content-body">
 
         <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>

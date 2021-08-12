@@ -9,15 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
-    <header class="content-header">
-        <h1 class="content-title">
-            <?php the_title(); ?>
-        </h1>
-        <div class="content-meta"></div>
-        <?php if ( has_post_thumbnail() ) : ?>
-            <img class="content-thumbnail" src="<?php the_post_thumbnail_url('content-featured'); ?>" alt="<?php the_title(); ?>"> 
-        <?php endif; ?>
-    </header>
+    
+    <?php get_template_part( 'template-parts/header/header', 'page' ); ?>
 
     <section class="content-body" id="content">
         <?php
@@ -36,9 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) : exit; endif;
 
     </section>
 
-    <footer class="content-footer">
-
-    </footer>
+    <?php get_template_part( 'template-parts/footer/footer', 'page' ); ?>
     
 
 </article>
